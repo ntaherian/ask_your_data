@@ -111,7 +111,7 @@ def main():
         for message in st.session_state.chat_history[::-1]:
             if message['is_fig']:
                 st.write(user_msg_container_html_template.replace("$MSG", message['message']), unsafe_allow_html=True)
-                st.plotly_chart(message['response'], use_container_width=True,theme=None)
+                st.plotly_chart(message['response'], use_container_width=True,theme=None,sharing="streamlit")
             else:
                 st.write(user_msg_container_html_template.replace("$MSG", message['message']), unsafe_allow_html=True)
                 st.write(bot_msg_container_html_template.replace("$MSG", str(message['response'])), unsafe_allow_html=True)
