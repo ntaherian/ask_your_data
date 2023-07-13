@@ -96,7 +96,7 @@ tiktoken==0.3.3
 tweepy==4.14.0
 urllib3_secure_extra==0.1.0
 uvloop==0.17.0
-xlrd==2.0.1
+xlrd
 xmlrpclib==1.0.1
 youtube_transcript_api==0.6.0
 zstandard==0.21.0
