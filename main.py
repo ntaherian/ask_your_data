@@ -95,9 +95,9 @@ def main():
                     st.session_state.input = st.session_state.input + ' ' + 'using seaborn'
                 #st.write(agent.run(st.session_state.input))
                 x = pandas_ai.run(list(dataframes.values()), st.session_state.input)
-                fig = go.Figure()
+                fig = plt.gcf()
                 buffer = io.BytesIO()
-                if len(fig.data) > 0:
+                if fig.get_axes():
                     #plt.savefig(buffer, format='png')
                     buffer.seek(0)
                     # Display the image in Streamlit
