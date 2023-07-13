@@ -97,4 +97,4 @@ tweepy==4.14.0
 urllib3_secure_extra==0.1.0
 uvloop==0.17.0
 plotly
-pandasai 
+pandasai==0.6.10
