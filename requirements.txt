@@ -2,7 +2,7 @@ plotly
 pandasai
 langchain
 python-dotenv
-streamlit
+streamlit==1.13.0
 faiss-cpu
 openai
 seaborn
