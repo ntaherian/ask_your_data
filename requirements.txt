@@ -61,7 +61,6 @@ mwparserfromhell==0.6.4
 mwxml==0.3.3
 networkx==2.8.8
 nltk==3.8.1
-nomic==1.1.6
 numarray==1.5.1
 Numeric==24.2
 O365==2.0.26
