@@ -101,7 +101,7 @@ def main():
                     #plt.savefig(buffer, format='png')
                     buffer.seek(0)
                     # Display the image in Streamlit
-                    st.plotly_chart(buffer, use_column_width=True)
+                    st.image(buffer, use_column_width=True)
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": buffer, "is_fig": True})
                     
                 else:
