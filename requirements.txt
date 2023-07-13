@@ -19,7 +19,6 @@ cx_Oracle==8.3.0
 Cython==0.29.33
 datasets==2.12.0
 disco==1.40.4
-dl==0.1.0
 docarray==0.31.1
 docutils==0.20
 docx2txt==0.8
