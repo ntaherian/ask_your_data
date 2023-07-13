@@ -9,7 +9,6 @@ import glob
 from langchain.agents.agent_types import AgentType
 import tempfile
 from pandasai import PandasAI
-#from pandasai.llm.openai import OpenAI
 from pandasai.llm.open_assistant import OpenAssistant
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -17,8 +16,6 @@ import seaborn as sns
 import io
 import matplotlib
 import plotly.graph_objects as go
-#import plotly.io as pio
-#pio.templates.default = "plotly"
 
 def submit():
     st.session_state.input = st.session_state.widget
