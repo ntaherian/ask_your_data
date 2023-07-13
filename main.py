@@ -96,12 +96,12 @@ def main():
                 #st.write(agent.run(st.session_state.input))
                 x = pandas_ai.run(list(dataframes.values()), st.session_state.input)
                 fig = plt.gcf()
-                buffer = io.BytesIO()
+                #buffer = io.BytesIO()
                 if fig.get_axes():
-                    buffer.seek(0)
+                    #buffer.seek(0)
                     # Display the image in Streamlit
-                    st.pyplot(buffer, use_column_width=True)
-                    st.session_state.chat_history.append({"message": st.session_state.input, "response": buffer, "is_fig": True})
+                    st.pyplot(fig, use_column_width=True)
+                    st.session_state.chat_history.append({"message": st.session_state.input, "response": fig, "is_fig": True})
                     
                 else:
                     #st.write(x)
