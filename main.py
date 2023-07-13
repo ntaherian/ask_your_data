@@ -92,7 +92,7 @@ def main():
         if st.session_state.input is not None and st.session_state.input != "":
             with st.spinner(text="In progress..."):
                 if any(word in st.session_state.input for word in ["plot","chart","Plot","Chart"]):
-                    st.session_state.input = st.session_state.input + ' ' + 'using seaborn'
+                    st.session_state.input = st.session_state.input + ' ' + 'using plotly'
                 #st.write(agent.run(st.session_state.input))
                 x = pandas_ai.run(list(dataframes.values()), st.session_state.input)
                 fig = go.Figure()
@@ -101,7 +101,7 @@ def main():
                     #plt.savefig(buffer, format='png')
                     buffer.seek(0)
                     # Display the image in Streamlit
-                    st.image(buffer, use_column_width=True)
+                    st.plotly_chart(buffer, use_column_width=True)
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": buffer, "is_fig": True})
                     
                 else:
