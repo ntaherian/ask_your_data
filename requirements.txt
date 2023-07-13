@@ -55,7 +55,6 @@ pinecone_text==0.4.2
 pipeline==0.1
 praw==7.7.0
 promptlayer==0.1.80
-protobuf==4.23.0
 psutil==5.9.1
 pygpt4all==1.1.0
 PyInstaller==5.10.1
