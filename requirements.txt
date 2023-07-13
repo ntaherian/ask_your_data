@@ -57,7 +57,6 @@ lxml==4.9.2
 matplotlib==3.6.2
 metal_sdk==1.0.1
 mtrand==0.1
-mwparserfromhell==0.6.4
 numarray==1.5.1
 Numeric==24.2
 O365==2.0.26
