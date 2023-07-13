@@ -48,7 +48,6 @@ idna_ssl==1.1.0
 importlib_metadata==5.0.0
 InstructorEmbedding==1.0.0
 ipython==8.13.2
-ipywidgets==7.7.0
 numarray==1.5.1
 Numeric==24.2
 O365==2.0.26
