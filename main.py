@@ -100,7 +100,7 @@ def main():
                 if fig.get_axes():
                     #buffer.seek(0)
                     # Display the image in Streamlit
-                    st.pyplot(fig, use_column_width=True)
+                    st.pyplot(fig)
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": fig, "is_fig": True})
                     
                 else:
@@ -110,7 +110,7 @@ def main():
         for message in st.session_state.chat_history[::-1]:
             if message['is_fig']:
                 st.write(user_msg_container_html_template.replace("$MSG", message['message']), unsafe_allow_html=True)
-                st.pyplot(message['response'], use_container_width=True,theme=None,sharing="streamlit")
+                st.pyplot(message['response'])
             else:
                 st.write(user_msg_container_html_template.replace("$MSG", message['message']), unsafe_allow_html=True)
                 st.write(bot_msg_container_html_template.replace("$MSG", str(message['response'])), unsafe_allow_html=True)
