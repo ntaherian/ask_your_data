@@ -53,7 +53,6 @@ Jinja2==3.1.2
 keyring==23.13.1
 lark==1.1.5
 lockfile==0.12.2
-lxml==4.9.2
 numarray==1.5.1
 Numeric==24.2
 O365==2.0.26
