@@ -85,7 +85,7 @@ def main():
 
         # create PandasAI object, passing the LLM
         pandas_ai = PandasAI(llm, conversational=False, verbose=True)
-        pandas_ai.clear_cache()
+        #pandas_ai.clear_cache()
         
         user_question = st.text_input("Ask a question about your CSV: ",key='widget', on_change=submit)
         
@@ -96,11 +96,8 @@ def main():
                 #st.write(agent.run(st.session_state.input))
                 x = pandas_ai.run(list(dataframes.values()), st.session_state.input)
                 fig = plt.gcf()
-                #buffer = io.BytesIO()
                 if fig.get_axes():
-                    #buffer.seek(0)
-                    # Display the image in Streamlit
-                    #st.pyplot(fig)
+                    
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": fig, "is_fig": True})
                     
                 else:
