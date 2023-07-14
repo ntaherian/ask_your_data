@@ -104,7 +104,7 @@ def main():
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": fig, "is_fig": True})
                     
                 else:
-                    #st.write(x)
+                    st.write(x)
                     st.session_state.chat_history.append({"message": st.session_state.input, "response": x, "is_fig": False})
         
         for message in st.session_state.chat_history[::-1]:
