@@ -9,7 +9,7 @@ import glob
 from langchain.agents.agent_types import AgentType
 import tempfile
 from pandasai import PandasAI
-from pandasai.llm.open_assistant import OpenAssistant
+#from pandasai.llm.open_assistant import OpenAssistant
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
